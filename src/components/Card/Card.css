@@ -16,6 +16,8 @@
 
 .card-children {
   padding: 1rem;
+  max-height: 400px;
+  overflow-y: scroll;
   border-top: 0 !important;
   border: 1px solid rgba(39, 41, 43, 0.1);
 }
