@@ -1,0 +1,52 @@
+.root {
+  gap: 20px;
+  display: grid;
+  padding: 0 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.file-content {
+  grid-column: 1 / 2;
+}
+
+.count-words {
+  grid-column: 2 / 4;
+}
+
+.count-words ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.count-words ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(39 41 43 / 15%);
+}
+
+.count-words ul li:last-of-type {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.count-words ul li p {
+  margin: 0;
+}
+
+.count-words ul li span {
+  font-weight: 600;
+}
+
+/*--------------- Responsive */
+
+@media screen and (max-width: 960px) {
+  .file-content,
+  .count-words {
+    grid-column: 1 / 3;
+  }
+}
